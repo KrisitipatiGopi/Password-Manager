@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Password-Manager/static/css/main.82e22567.css",
-    "main.js": "/Password-Manager/static/js/main.6d99a92a.js",
-    "static/js/787.25abfe7e.chunk.js": "/Password-Manager/static/js/787.25abfe7e.chunk.js",
-    "index.html": "/Password-Manager/index.html",
-    "main.82e22567.css.map": "/Password-Manager/static/css/main.82e22567.css.map",
-    "main.6d99a92a.js.map": "/Password-Manager/static/js/main.6d99a92a.js.map",
-    "787.25abfe7e.chunk.js.map": "/Password-Manager/static/js/787.25abfe7e.chunk.js.map"
+    "main.css": "/Passwords/static/css/main.704f0254.css",
+    "main.js": "/Passwords/static/js/main.9a778596.js",
+    "static/js/787.25abfe7e.chunk.js": "/Passwords/static/js/787.25abfe7e.chunk.js",
+    "index.html": "/Passwords/index.html",
+    "main.704f0254.css.map": "/Passwords/static/css/main.704f0254.css.map",
+    "main.9a778596.js.map": "/Passwords/static/js/main.9a778596.js.map",
+    "787.25abfe7e.chunk.js.map": "/Passwords/static/js/787.25abfe7e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82e22567.css",
-    "static/js/main.6d99a92a.js"
+    "static/css/main.704f0254.css",
+    "static/js/main.9a778596.js"
   ]
 }
