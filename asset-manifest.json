@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Passwords/static/css/main.704f0254.css",
-    "main.js": "/Passwords/static/js/main.9a778596.js",
-    "static/js/787.25abfe7e.chunk.js": "/Passwords/static/js/787.25abfe7e.chunk.js",
-    "index.html": "/Passwords/index.html",
-    "main.704f0254.css.map": "/Passwords/static/css/main.704f0254.css.map",
-    "main.9a778596.js.map": "/Passwords/static/js/main.9a778596.js.map",
-    "787.25abfe7e.chunk.js.map": "/Passwords/static/js/787.25abfe7e.chunk.js.map"
+    "main.css": "/FinalPasswordManager/static/css/main.704f0254.css",
+    "main.js": "/FinalPasswordManager/static/js/main.79bbbff2.js",
+    "static/js/787.25abfe7e.chunk.js": "/FinalPasswordManager/static/js/787.25abfe7e.chunk.js",
+    "index.html": "/FinalPasswordManager/index.html",
+    "main.704f0254.css.map": "/FinalPasswordManager/static/css/main.704f0254.css.map",
+    "main.79bbbff2.js.map": "/FinalPasswordManager/static/js/main.79bbbff2.js.map",
+    "787.25abfe7e.chunk.js.map": "/FinalPasswordManager/static/js/787.25abfe7e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.704f0254.css",
-    "static/js/main.9a778596.js"
+    "static/js/main.79bbbff2.js"
   ]
 }
