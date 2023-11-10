@@ -1,38 +1,241 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainContainer{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color:  #9ba9eb;
+  height: 100%;
+}
+.image{
+  height: 40px;
+  width: 100px;
+  margin: 20px;
+}
+.contentContainer{
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.topContainer{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 10px;
+  height: 100%;
+  background-color: #5763a5;
+  border-radius: 5px;
+  justify-content: space-around;
+  margin-top: 0px;
+}
+.leftContainer{
+  display: flex;
+  flex-direction: column;
+  margin: 18px;
+  padding: 12px;
+  background-color:  #454f84;
+  border-radius: 5px;
+}
+.mainImage{
+  height: 300px;
+  width: 300px;
+}
+.heading{
+  color: white;
+  font-size: 20px;
+}
+.inputFields{
+  height: 20px;
+  width: 300px;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.button{
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #0b69ff;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: solid 2px white;
+}
+.button:hover{
+  background-color: black;
+}
+.formContainer{
+  display: flex;
+  flex-direction: column;
+}
+.buttonContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .contentContainer {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .topContainer {
+    flex-direction: column; /* Change to a column layout for smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .leftContainer {
+    margin: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .mainImage {
+    height: auto; /* Allow the main image to resize based on the width */
+    width: 100%; /* Make the main image take up the full width */
+  }
+
+  .inputFields {
+    width: 100%;
+    padding: 5px; /* Make input fields take up the full width */
+  }
+
+  /* Additional styles for components in the bottom row */
+
+  
+  /* Add any other styles or adjustments needed for mobile views */
+}
+.bottomContainer{
+  display: flex;
+  flex-direction: column;
+  background-color: #5763a5;
+  height: 100%;
+  padding: 4px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.innerContainer{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 10px;
+}
+.para{
+  margin-left: 10px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.bottomTopContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.imageContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.line{
+  width: 100%;
+}
+.PasswordsContainer{
+  display: flex;
+  flex-direction: row;
+}
+.inside{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  border : solid 2px lightblue;
+  height: 80px;
+}
+.row{
+  display: flex;
+  flex-direction: column;
+  margin-right: 6px;
+}
+.delt{
+  background: none;
+  background-color: transparent;
+  border: none;
+}
+.delete{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.no{
+  margin: 1.5px;
+}
+.deleteButton{
+  padding: 0px;
+  height: 25px;
+  width: 25px;
+}
+.checkBoxContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+/* Mobile View */
+@media only screen and (max-width: 767px) {
+  .topContainer {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .leftContainer {
+    margin: 10px;
+    padding: 12px;
+  }
+
+  .mainImage {
+    height: auto;
+    width: 100%;
+  }
+
+  .inputFields {
+    width: 100%;
+  }
+
+  .bottomContainer {
+    margin: 5px;
+  }
+
+  .innerContainer {
+    margin: 5px;
+  }
+
+  .para {
+    margin-left: 5px;
+  }
+
+  .bottomTopContainer {
+    flex-direction: column;
+  }
+
+  .PasswordsContainer {
+    flex-direction: column;
+  }
+
+  .inside {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .row {
+    margin-right: 0;
+  }
+
+  .delete {
+    justify-content: flex-start;
+  }
+
+  .deleteButton {
+    height: 20px;
+    width: 20px;
+  }
+
+  .checkBoxContainer {
+    justify-content: flex-start;
+    margin-top: 5px;
   }
 }
