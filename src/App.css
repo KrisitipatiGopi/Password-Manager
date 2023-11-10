@@ -71,35 +71,6 @@
   justify-content: flex-end;
   margin-top: 10px;
 }
-@media only screen and (max-width: 767px) {
-  .contentContainer {
-    margin-left: 10px; /* Adjust margin for smaller screens */
-  }
-
-  .topContainer {
-    flex-direction: column; /* Change to a column layout for smaller screens */
-    height: auto; /* Adjust height for smaller screens */
-  }
-
-  .leftContainer {
-    margin: 10px; /* Adjust margin for smaller screens */
-  }
-
-  .mainImage {
-    height: auto; /* Allow the main image to resize based on the width */
-    width: 100%; /* Make the main image take up the full width */
-  }
-
-  .inputFields {
-    width: 100%;
-    padding: 5px; /* Make input fields take up the full width */
-  }
-
-  /* Additional styles for components in the bottom row */
-
-  
-  /* Add any other styles or adjustments needed for mobile views */
-}
 .bottomContainer{
   display: flex;
   flex-direction: column;
@@ -175,16 +146,25 @@
   justify-content: flex-end;
 }
 /* Mobile View */
+.inputBox{
+  height: 30px;
+  width: 300px;
+  border-radius: 5px;
+  padding: 5px;
+}
+/* Mobile View */
 @media only screen and (max-width: 767px) {
+  .contentContainer {
+    margin-left: 10px;
+  }
+
   .topContainer {
     flex-direction: column;
     height: auto;
-    align-items: center;
   }
 
   .leftContainer {
     margin: 10px;
-    padding: 12px;
   }
 
   .mainImage {
@@ -227,6 +207,78 @@
 
   .delete {
     justify-content: flex-start;
+  }
+
+  .deleteButton {
+    height: 20px;
+    width: 20px;
+  }
+
+  .checkBoxContainer {
+    justify-content: flex-start;
+    margin-top: 5px;
+  }
+}
+/* Mobile View */
+@media only screen and (max-width: 767px) {
+  .contentContainer {
+    margin-left: 10px;
+  }
+
+  .topContainer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .leftContainer {
+    margin: 10px;
+  }
+
+  .mainImage {
+    height: auto;
+    width: 100%;
+  }
+
+  .inputFields {
+    width: 100%;
+    padding: 6px;
+  }
+
+  .bottomContainer {
+    margin: 5px;
+  }
+
+  .innerContainer {
+    margin: 5px;
+  }
+
+  .para {
+    margin-left: 5px;
+  }
+
+  .bottomTopContainer {
+    flex-direction: column;
+  }
+
+  .PasswordsContainer {
+    flex-direction: column;
+  }
+
+  .inside {
+    flex-direction: row;
+    height: auto;
+    justify-content: space-around;
+  }
+
+  .row {
+    margin-right: 0;
+  }
+
+  .delete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
   }
 
   .deleteButton {

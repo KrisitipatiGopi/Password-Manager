@@ -12,6 +12,20 @@ class Passwords extends Component {
     isShow: false,
   }
 
+  componentDidMount() {
+    // Load passwords from localStorage on component mount
+    const storedPasswords = localStorage.getItem('passwords');
+    if (storedPasswords) {
+      this.setState({ PasswordsList: JSON.parse(storedPasswords) });
+    }
+  }
+
+  componentDidUpdate() {
+    // Save passwords to localStorage on component update
+    localStorage.setItem('passwords', JSON.stringify(this.state.PasswordsList));
+  }
+
+
   onChangeWebsite = event => {
     this.setState({webistename: event.target.value})
   }
@@ -31,6 +45,12 @@ class Passwords extends Component {
   onAddNewPasswords = event => {
     event.preventDefault()
     const {username, password, webistename} = this.state
+    if (!webistename.trim() || !username.trim() || !password.trim()) {
+        alert('All fields are required'); // You can replace this with a more user-friendly notification
+  
+        // Return early to prevent adding empty passwords to the list
+        return;
+      }
     const newPasswordsList = {
       id: uuidv4(),
       userName: username,
@@ -126,12 +146,11 @@ class Passwords extends Component {
             <div className="innerContainer">
               <div className="bottomTopContainer">
                 <p className="para">
-                  {' '}
                   Your Passwords : <b>{PasswordsList.length}</b>
                 </p>
                 <input
                   type="search"
-                  className="inputFields"
+                  className="inputBox"
                   placeholder="Search For Your Passwords"
                   onChange={this.onChangeSearch}
                   value={SearchInput}
